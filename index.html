@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Daily activity</title>
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="js/promise.min.js"></script>
+	<script src="js/vega.min.js"></script>
+	<script src="js/vega-lite.min.js"></script>
+	<script src="js/vega-embed.min.js"></script>
+	<script src="js/specs.js"></script>
+</head>
+
+<body>
+    <div class="container">
+		<div class="header">
+			<h1 class="text-muted">
+				Daily activity tracking
+			</h1>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div id="graph" class="text-center"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		vega.embed("#graph", visualizationSpec, vgEmbedConfig);
+	</script>
+
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">Created with <a href="https://vega.github.io/vega/" target="_blank">Vega</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+		</div>
+	</footer>
+</body>
+</html>

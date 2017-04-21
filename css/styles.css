@@ -1,0 +1,31 @@
+body {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	margin: auto;
+	position: relative;
+	margin-top: 1em;
+}
+
+h1 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+div.container {
+	width: 1760px;
+}
+
+text {
+	font: 12px;
+}
+
+.pager {
+	height: 1.4em;
+}
+
+.footer .text-muted {
+	margin: 1em 0;
+}
+
+
+.highcharts-credits {
+	display: none;
+}
