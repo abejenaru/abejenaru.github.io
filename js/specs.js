@@ -1,18 +1,11 @@
 
-var vgEmbedConfig = { "mode": "vega", "renderer": "canvas", "actions": { "source": false, "editor": false } };
-
-
 var visualizationSpec = {
   "$schema": "https://vega.github.io/schema/vega/v3.0.json",
 
-  "width": 1600,
-  "height": 600,
+  "width": 1400,
+  "height": 650,
   "padding": 2,
   "autosize": "fit",
-
-  "legends": [
-    {"title": "", "fill": "color"}
-  ],
 
   "data": [
     {
@@ -54,9 +47,26 @@ var visualizationSpec = {
   ],
 
   "axes": [
-    {"orient": "bottom", "scale": "x", "format": "%b %d, %Y"},
+    {
+      "orient": "bottom", "scale": "x", "format": "%b %d, %Y", "tickCount": 60, "grid": true,
+      "encode": {
+      	"interactive": true,
+        "labels": {
+          "enter": {
+            "angle": {"value": 45},
+            "dx": {"value": 30}
+          }
+        }
+      }
+    },
     {"orient": "left", "scale": "y", "grid": true}
   ],
+
+  "legends": [{
+  	"interactive": true,
+  	"orient": "top-left",
+    "fill": "color"
+  }],
 
   "marks": [
     {
@@ -74,7 +84,7 @@ var visualizationSpec = {
           "from": {"data": "series"},
           "encode": {
             "enter": {
-              "interpolate": {"value": "linear"},
+              "interpolate": {"value": "monotone"},
               "x": {"scale": "x", "field": "Date"},
               "y": {"scale": "y", "field": "value"},
               "y2": {"scale": "y", "value": 0},
@@ -85,7 +95,7 @@ var visualizationSpec = {
               "strokeWidth": {"value": 2}
             },
             "hover": {
-              "strokeWidth": {"value": 5}
+              "strokeWidth": {"value": 4}
             }
           }
         }

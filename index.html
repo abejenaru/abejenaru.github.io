@@ -10,8 +10,6 @@
 	<link href="css/styles.css" rel="stylesheet">
 	<script src="js/promise.min.js"></script>
 	<script src="js/vega.min.js"></script>
-	<script src="js/vega-lite.min.js"></script>
-	<script src="js/vega-embed.min.js"></script>
 	<script src="js/specs.js"></script>
 </head>
 
@@ -32,13 +30,13 @@
 
 
 	<script>
-		vega.embed("#graph", visualizationSpec, vgEmbedConfig);
+		new vega.View(vega.parse(visualizationSpec)).renderer('canvas').initialize('#graph').hover().run();
 	</script>
 
 
 	<footer class="footer">
 		<div class="container">
-			<p class="text-muted">Created with <a href="https://vega.github.io/vega/" target="_blank">Vega</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
+			<p class="text-muted">Made with <a href="https://vega.github.io/vega/" target="_blank">Vega</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
 		</div>
 	</footer>
 </body>
