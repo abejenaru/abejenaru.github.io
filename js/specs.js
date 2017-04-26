@@ -10,7 +10,7 @@ var visualizationSpec = {
   "data": [
     {
       "name": "raw-data",
-      "url": "data/activity.csv",
+      "url": "data/activity2016.csv",
       "format": {"type":"csv", "parse": {"Date": "date", "LightlyActiveMinutes": "number", "FairlyActiveMinutes": "number", "VeryActiveMinutes": "number"}}
     },
     {
@@ -18,6 +18,13 @@ var visualizationSpec = {
       "source": "raw-data",
       "transform": [
         {"type": "fold", "fields": ["LightlyActiveMinutes","FairlyActiveMinutes","VeryActiveMinutes"]}
+      ]
+    },
+    {
+      "name": "table2",
+      "source": "table",
+      "transform": [
+        {"type": "stack", "field": "value", "groupby": ["Date"], "sort": {"field": "key"}}
       ]
     }
   ],
@@ -28,7 +35,7 @@ var visualizationSpec = {
       "type": "time",
       "range": "width",
       "round": true,
-      "domain": {"data": "table", "field": "Date"}
+      "domain": {"data": "table2", "field": "Date"}
     },
     {
       "name": "y",
@@ -36,19 +43,19 @@ var visualizationSpec = {
       "range": "height",
       "nice": true,
       "zero": true,
-      "domain": {"data": "table", "field": "value"}
+      "domain": {"data": "table2", "field": "y1"}
     },
     {
       "name": "color",
       "type": "ordinal",
       "range": "category",
-      "domain": {"data": "table", "field": "key"}
+      "domain": {"data": "table2", "field": "key"}
     }
   ],
 
   "axes": [
     {
-      "orient": "bottom", "scale": "x", "format": "%b %d, %Y", "tickCount": 60, "grid": true,
+      "orient": "bottom", "scale": "x", "format": "%b %d, %Y", "grid": true,
       "encode": {
       	"interactive": true,
         "labels": {
@@ -70,36 +77,23 @@ var visualizationSpec = {
 
   "marks": [
     {
-      "type": "group",
-      "from": {
-        "facet": {
-          "name": "series",
-          "data": "table",
-          "groupby": "key"
+      "type": "rect",
+      "from": {"data": "table2"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "x", "field": "Date"},
+          "width": {"scale": "x", "band": 1, "offset": 5},
+          "y": {"scale": "y", "field": "y0"},
+          "y2": {"scale": "y", "field": "y1"},
+          "fill": {"scale": "color", "field": "key"}
+        },
+        "update": {
+          "fillOpacity": {"value": 1}
+        },
+        "hover": {
+          "fillOpacity": {"value": 0.5}
         }
-      },
-      "marks": [
-        {
-          "type": "line",
-          "from": {"data": "series"},
-          "encode": {
-            "enter": {
-              "interpolate": {"value": "monotone"},
-              "x": {"scale": "x", "field": "Date"},
-              "y": {"scale": "y", "field": "value"},
-              "y2": {"scale": "y", "value": 0},
-              "stroke": {"scale": "color", "field": "key"},
-              "strokeWidth": {"value": 2}
-            },
-            "update": {
-              "strokeWidth": {"value": 2}
-            },
-            "hover": {
-              "strokeWidth": {"value": 4}
-            }
-          }
-        }
-      ]
+      }
     }
   ]
 };
