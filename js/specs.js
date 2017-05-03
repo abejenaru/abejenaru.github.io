@@ -10,7 +10,7 @@ var visualizationSpec = {
   "data": [
     {
       "name": "raw-data",
-      "url": "data/activity2016.csv",
+      "url": "data/activity.csv",
       "format": {"type":"csv", "parse": {"Date": "date", "LightlyActiveMinutes": "number", "FairlyActiveMinutes": "number", "VeryActiveMinutes": "number"}}
     },
     {
