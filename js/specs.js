@@ -1,5 +1,5 @@
 
-var visualizationSpec = {
+var visSpec = {
   "$schema": "https://vega.github.io/schema/vega/v3.0.json",
 
   "width": 1400,
@@ -55,7 +55,7 @@ var visualizationSpec = {
 
   "axes": [
     {
-      "orient": "bottom", "scale": "x", "format": "%b %d, %Y", "grid": true,
+      "orient": "bottom", "scale": "x", "format": "%b %d, %Y", "grid": true, "zindex": 1,
       "encode": {
       	"interactive": true,
         "labels": {

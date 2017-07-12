@@ -7,9 +7,11 @@
 	<title>Daily activity</title>
 	<link href="css/fonts.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/vega-tooltip.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<script src="js/promise.min.js"></script>
 	<script src="js/vega.min.js"></script>
+	<script src="js/vega-tooltip.min.js"></script>
 	<script src="js/specs.js"></script>
 </head>
 
@@ -30,7 +32,39 @@
 
 
 	<script>
-		new vega.View(vega.parse(visualizationSpec)).renderer('canvas').initialize('#graph').hover().run();
+		var runtime = vega.parse(visSpec);
+		var view = new vega.View(runtime).renderer('canvas').initialize('#graph').hover().run();
+		vegaTooltip.vega(view, {
+			"fields": [
+				{
+					"field": "Date",
+					"formatType": "time",
+					"format": "%d %b %Y"
+				},
+				{
+					"field": "key",
+					"title": "Type"
+				},
+				{
+					"field": "value",
+					"title": "Steps"
+				},
+				{
+					"field": "TotalSteps",
+					"title": "Total Steps"
+				},
+				{
+					"field": "TotalFloorsClimbed",
+					"title": "Total Floors Climbed"
+				},
+				{
+					"field": "TotalDistanceCovered",
+					"title": "Total Distance (km)"
+				}
+			],
+			"delay": 150,
+			"colorTheme": "dark"
+		});
 	</script>
 
 
