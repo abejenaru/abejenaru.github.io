@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "angular": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "store": "^2.0.12"
+  }
+}

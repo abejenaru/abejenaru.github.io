@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="CollectionController">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ appTitle }}</title>
+  <script src="js/angular.min.js"></script>
+  <script src="js/store.legacy.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1 class="app-title">{{ appTitle }}</h1>
+			<div class="animate-switch-container" ng-switch="lang">
+				<div ng-switch-when="en"><strong>En</strong>|<a href="javascript:;" ng-click="changeLang('fr')">Fr</a></div>
+				<div ng-switch-default><a href="javascript:;" ng-click="changeLang('en')">En</a>|<strong>Fr</strong></div>
+			</div>
+		</header>
+
+		<section class="app-body" ng-repeat="(key, value) in collection">
+			<ul class="unstyled">
+				<li class="item own-{{entry.own}}" ng-model="entry" ng-repeat="entry in value | orderBy:'order'" ng-click="entry.own=!(entry.own);toggleItem(entry.id)">
+					<div title="{{entry.title}}">
+						<img ng-src="img/{{key}}/{{entry.id}}.jpg" width="96" border="0" /><br/>
+						<span>{{entry.title}}</span>
+					</div>
+				</li>
+				<br style="clear:both"/>
+			</ul>
+		</section>
+	</div>
+</body>
+</html>

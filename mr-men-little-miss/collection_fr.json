@@ -1,0 +1,319 @@
+{
+	"miss": [
+		{
+			"id": "miss-bossy", "order": 1, "title": "Mme. Autoritaire"
+		},
+		{
+			"id": "miss-scatterbrain", "order": 2, "title": "Mme. Tête-en-l'air"
+		},
+		{
+			"id": "miss-tidy", "order": 3, "title": "Mme. Range-tout"
+		},
+		{
+			"id": "miss-helpfull", "order": 4, "title": "Mme. Catastrophe"
+		},
+		{
+			"id": "miss-somersault", "order": 5, "title": "Mme. Acrobate"
+		},
+		{
+			"id": "miss-magic", "order": 6, "title": "Mme. Magie"
+		},
+		{
+			"id": "miss-neat", "order": 7, "title": "Mme. Proprette"
+		},
+		{
+			"id": "miss-fickle", "order": 8, "title": "Mme. Indécise"
+		},
+		{
+			"id": "miss-tiny", "order": 9, "title": "Mme. Petite"
+		},
+		{
+			"id": "miss-all-goes-well", "order": 10, "title": "Mme. Tout-Va-Bien"
+		},
+		{
+			"id": "miss-loud", "order": 11, "title": "Mme. Tintamarre"
+		},
+		{
+			"id": "miss-shy", "order": 12, "title": "Mme. Timide"
+		},
+		{
+			"id": "miss-fun", "order": 13, "title": "Mme. Boute-En-Train"
+		},
+		{
+			"id": "miss-naughty", "order": 14, "title": "Mme. Canaille"
+		},
+		{
+			"id": "miss-splendid", "order": 15, "title": "Mme. Beauté"
+		},
+		{
+			"id": "miss-wise", "order": 16, "title": "Mme. Sage"
+		},
+		{
+			"id": "miss-twins", "order": 17, "title": "Mme. Double"
+		},
+		{
+			"id": "miss-brainy", "order": 18, "title": "Mme. Je-Sais-Tout"
+		},
+		{
+			"id": "miss-lucky", "order": 19, "title": "Mme. Chance"
+		},
+		{
+			"id": "miss-careful", "order": 20, "title": "Mme. Prudente"
+		},
+		{
+			"id": "miss-busy", "order": 21, "title": "Mme. Boulot"
+		},
+		{
+			"id": "miss-brilliant", "order": 22, "title": "Mme. Géniale"
+		},
+		{
+			"id": "miss-yes", "order": 23, "title": "Mme. Oui"
+		},
+		{
+			"id": "miss-curious", "order": 24, "title": "Mme. Pourquoi"
+		},
+		{
+			"id": "miss-vain", "order": 25, "title": "Mme. Coquette"
+		},
+		{
+			"id": "miss-contrary", "order": 26, "title": "Mme. Contraire"
+		},
+		{
+			"id": "miss-stubborn", "order": 27, "title": "Mme. Têtue"
+		},
+		{
+			"id": "miss-late", "order": 28, "title": "Mme. En Retard"
+		},
+		{
+			"id": "miss-chatterbox", "order": 29, "title": "Mme. Bavarde"
+		},
+		{
+			"id": "miss-dotty", "order": 30, "title": "Mme. Follette"
+		},
+		{
+			"id": "miss-sunshine", "order": 31, "title": "Mme. Bonheur"
+		},
+		{
+			"id": "miss-star", "order": 32, "title": "Mme. Vedette"
+		},
+		{
+			"id": "miss-quick", "order": 33, "title": "Mme. Vite-Fait"
+		},
+		{
+			"id": "miss-busy-body", "order": 34, "title": "Mme. Casse-Pieds"
+		},
+		{
+			"id": "miss-greedy", "order": 35, "title": "Mme. Dodue"
+		},
+		{
+			"id": "miss-giggles", "order": 36, "title": "Mme. Risette"
+		},
+		{
+			"id": "miss-trouble", "order": 37, "title": "Mme. Chipie"
+		},
+		{
+			"id": "miss-bad", "order": 38, "title": "Mme. Farceuse"
+		},
+		{
+			"id": "miss-whoops", "order": 39, "title": "Mme. Malchance"
+		},
+		{
+			"id": "miss-scary", "order": 40, "title": "Mme. Terreur"
+		},
+		{
+			"id": "miss-princess", "order": 41, "title": "Mme. Princesse"
+		},
+		{
+			"id": "miss-hug", "order": 42, "title": "Mme. Câlin"
+		},
+		{
+			"id": "miss-christmas", "order": 43, "title": "Mme. Noël"
+		},
+		{
+			"id": "miss-birthday", "order": 44, "title": "Mme. Anniversaire"
+		},
+		{
+			"id": "miss-fabulous", "order": 45, "title": "Mme. Fabuleuse"
+		},
+		{
+			"id": "miss-sparkle", "order": 46, "title": "Mme. Lumineuse"
+		}
+	],
+
+
+	"men": [
+		{
+			"id": "mr-tickle", "order": 1, "title": "M. Chatouille"
+		},
+		{
+			"id": "mr-busy", "order": 2, "title": "M. Rapide"
+		},
+		{
+			"id": "mr-mischief", "order": 3, "title": "M. Farceur"
+		},
+		{
+			"id": "mr-greedy", "order": 4, "title": "M. Glouton"
+		},
+		{
+			"id": "mr-funny", "order": 5, "title": "M. Rigolo"
+		},
+		{
+			"id": "mr-strong", "order": 6, "title": "M. Costaud"
+		},
+		{
+			"id": "mr-grumble", "order": 7, "title": "M. Grognon"
+		},
+		{
+			"id": "mr-nosey", "order": 8, "title": "M. Curieux"
+		},
+		{
+			"id": "mr-dizzy", "order": 9, "title": "M. Nigaud"
+		},
+		{
+			"id": "mr-daydream", "order": 10, "title": "M. Rêve"
+		},
+		{
+			"id": "mr-crosspatch", "order": 11, "title": "M. Bagarreur"
+		},
+		{
+			"id": "mr-worry", "order": 12, "title": "M. Inquiet"
+		},
+		{
+			"id": "mr-no", "order": 13, "title": "M. Non"
+		},
+		{
+			"id": "mr-happy", "order": 14, "title": "M. Heureux"
+		},
+		{
+			"id": "mr-impossible", "order": 15, "title": "M. Incroyable"
+		},
+		{
+			"id": "mr-topsy-turvy", "order": 16, "title": "M. À L'Envers"
+		},
+		{
+			"id": "mr-perfect", "order": 17, "title": "M. Parfait"
+		},
+		{
+			"id": "mr-muddle", "order": 18, "title": "M. Méli-Mélo"
+		},
+		{
+			"id": "mr-noisy", "order": 19, "title": "M. Bruit"
+		},
+		{
+			"id": "mr-quiet", "order": 20, "title": "M. Silence"
+		},
+		{
+			"id": "mr-mean", "order": 21, "title": "M. Avare"
+		},
+		{
+			"id": "mr-messy", "order": 22, "title": "M. Sale"
+		},
+		{
+			"id": "mr-rush", "order": 23, "title": "M. Pressé"
+		},
+		{
+			"id": "mr-fussy", "order": 24, "title": "M. Tatillon"
+		},
+		{
+			"id": "mr-skinny", "order": 25, "title": "M. Maigre"
+		},
+		{
+			"id": "mr-clever", "order": 26, "title": "M. Malin"
+		},
+		{
+			"id": "mr-uppity", "order": 27, "title": "M. Malpoli"
+		},
+		{
+			"id": "mr-lazy", "order": 28, "title": "M. Endormi"
+		},
+		{
+			"id": "mr-grumpy", "order": 29, "title": "M. Grincheux"
+		},
+		{
+			"id": "mr-jelly", "order": 30, "title": "M. Peureux"
+		},
+		{
+			"id": "mr-silly", "order": 31, "title": "M. Étonnant"
+		},
+		{
+			"id": "mr-wrong", "order": 32, "title": "M. Farfelu"
+		},
+		{
+			"id": "mr-bump", "order": 33, "title": "M. Malchance"
+		},
+		{
+			"id": "mr-slow", "order": 34, "title": "M. Lent"
+		},
+		{
+			"id": "mr-snow", "order": 35, "title": "M. Neige"
+		},
+		{
+			"id": "mr-nonsense", "order": 36, "title": "M. Bizarre"
+		},
+		{
+			"id": "mr-clumsy", "order": 37, "title": "M. Maladroit"
+		},
+		{
+			"id": "mr-cheerful", "order": 38, "title": "M. Joyeux"
+		},
+		{
+			"id": "mr-forgetful", "order": 39, "title": "M. Étourdi"
+		},
+		{
+			"id": "mr-small", "order": 40, "title": "M. Petit"
+		},
+		{
+			"id": "mr-bounce", "order": 41, "title": "M. Bing"
+		},
+		{
+			"id": "mr-chatterbox", "order": 42, "title": "M. Bavard"
+		},
+		{
+			"id": "mr-tall", "order": 43, "title": "M. Grand"
+		},
+		{
+			"id": "mr-brave", "order": 44, "title": "M. Courageux"
+		},
+		{
+			"id": "mr-sneeze", "order": 45, "title": "M. Atchoum"
+		},
+		{
+			"id": "mr-good", "order": 46, "title": "M. Gentil"
+		},
+		{
+			"id": "mr-rude", "order": 47, "title": "M. Mal-Élevé"
+		},
+		{
+			"id": "mr-cool", "order": 48, "title": "M. Génial"
+		},
+		{
+			"id": "mr-nobody", "order": 49, "title": "M. Personne"
+		},
+		{
+			"id": "mr-marvelous", "order": 50, "title": "M. Formidable"
+		},
+		{
+			"id": "mr-adventure", "order": 51, "title": "M. Aventure"
+		},
+		{
+			"id": "mr-christmas", "order": 52, "title": "M. Noël"
+		},
+		{
+			"id": "mr-birthday", "order": 53, "title": "M. Anniversaire"
+		}
+	],
+
+
+	"magic": [
+		{
+			"id": "mr-bump-knight", "title": "M. Malchance et le Chevalier"
+		}
+	],
+
+
+	"men-new": [
+		{
+			"id": "mr-nosey-big-surprise", "title": "Une surprise pour M. Curieux"
+		}
+	]
+}

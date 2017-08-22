@@ -1,0 +1,63 @@
+body {
+	font-family: Tahoma;
+	background-color: #ededed;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(145, 145, 145);
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+
+.app-title {
+	font-size: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-shadow: 1px 1px 3px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+.app-body {
+	margin-top: 50px;
+}
+
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	padding: 10px;
+}
+
+ul li img {
+	padding: 4px;
+}
+
+.item  {
+	margin: 2px;
+	padding: 3px;
+	width: 120px;
+	height: 140px;
+	float: left;
+	text-align: center
+}
+
+.own-true {
+	border-radius: 10px;
+	border: 2px solid #3576f1;
+	box-shadow: 3px 3px 20px #888;
+}
+
+.own-false {
+	border-radius: 10px;
+	border: 2px solid transparent;
+	box-shadow: 2px 2px 10px #ddd;
+}

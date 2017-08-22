@@ -1,0 +1,13 @@
+{
+	"lang": "fr",
+	"title": {
+		"en": "Mr. Men & Little Misses",
+		"fr": "Monsieur Madame"
+	},
+	"owned": [
+		"miss-splendid", "miss-brainy", "miss-curious", "miss-scary", 
+		"mr-funny", "mr-strong", "mr-nosey", "mr-impossible", "mr-messy", "mr-jelly", "mr-cheerful", "mr-small", "mr-brave", 
+		"mr-rude", "mr-cool", "mr-marvelous", "mr-adventure",
+		"mr-bump-knight", "mr-nosey-big-surprise"
+	]
+}
