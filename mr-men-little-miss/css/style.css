@@ -18,12 +18,18 @@ a {
 }
 
 
-.app-title {
+h1 {
 	font-size: 40px;
 	line-height: 40px;
-	color: #fff;
-	text-shadow: 1px 1px 3px #000000;
-	filter: dropshadow(color=#000000, offx=1, offy=1);
+	color: #eee;
+	text-shadow: 1px 1px 3px #000;
+	filter: dropshadow(color=#000, offx=1, offy=1);
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 20px;
+	color: #3576f1;
 }
 
 .app-body {

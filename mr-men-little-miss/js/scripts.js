@@ -1,42 +1,46 @@
 // angular.module('myApp', ['ngAnimate']);
 angular.module('myApp', []);
 
+
 function CollectionController($scope, $http) {
-	var storageVar 		= "mr-men-little-misses-owned";
+	var ownedStorageVar = "mr-men-little-misses-owned";
+	var langStorageVar 	= "mr-men-little-misses-lang";
 
 	// Defaults
 	$scope.lang 		= "en";
 	$scope.appTitle 	= "Mr. Men & Little Misses";
+
 	$scope.config 		= {};
 	$scope.collection 	= {};
 	$scope.owned 		= [];
 
 
 	// Change language
-	$scope.changeLang = function($newLang){
-		$scope.lang 	= $newLang;
-		$scope.appTitle = $scope.config.title[$newLang];
+	$scope.changeLang = function(newLang){
+		$scope.lang 	= newLang;
+		$scope.appTitle = $scope.config.title[newLang];
 
-		$scope.loadCollection();
+		store.set(langStorageVar, newLang);
+
+		$scope.loadCollection(newLang);
 	};
 
 
 	// Load collection
-	$scope.loadCollection = function(){
+	$scope.loadCollection = function(lang){
 		$scope.collection = {};
 
-		$http.get('collection_'+ $scope.lang +'.json').success(function(response){
-			angular.forEach(response, function(collectionEntries, collectionKey){
-				$scope.collection[collectionKey] = [];
+		$http.get('collection_'+ lang +'.json').success(function(response){
+			angular.forEach(response, function(subcollection, key){
+				$scope.collection[key] = subcollection;
 
-				angular.forEach(collectionEntries, function(value){
-					if ($scope.owned.indexOf(value.id) !== -1) {
-						angular.extend(value, { own: true });
+				angular.forEach($scope.collection[key].library, function(entry){
+					if ($scope.owned.indexOf(entry.id) !== -1) {
+						angular.extend(entry, { own: true });
 					} else {
-						angular.extend(value, { own: false });
+						angular.extend(entry, { own: false });
 					}
-					this.push(value);
-				}, $scope.collection[collectionKey]);
+				});
 			});
 		});
 	};
@@ -51,7 +55,7 @@ function CollectionController($scope, $http) {
 			$scope.owned.push(item);
 		}
 
-		store.set(storageVar, JSON.stringify($scope.owned));
+		store.set(ownedStorageVar, JSON.stringify($scope.owned));
 	};
 
 
@@ -59,11 +63,14 @@ function CollectionController($scope, $http) {
 	$http.get('config.json').success(function(response){
 		$scope.config = response;
 
-		$scope.owned = (store.get(storageVar) !== undefined) ? JSON.parse(store.get(storageVar)) : $scope.config.owned;
-		store.set(storageVar, JSON.stringify($scope.owned));
+		$scope.owned 	= (store.get(ownedStorageVar) !== undefined) ? JSON.parse(store.get(ownedStorageVar)) : $scope.config.owned;
+		store.set(ownedStorageVar, JSON.stringify($scope.owned));
+
+		$scope.lang 	= (store.get(langStorageVar) !== undefined) ? store.get(langStorageVar) : $scope.config.lang;
+		store.set(langStorageVar, $scope.lang);
 
 		// Load lang and collection
-		$scope.changeLang(response.lang);
+		$scope.changeLang($scope.lang);
 	});
 
 }
