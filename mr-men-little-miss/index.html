@@ -11,12 +11,12 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<header>
 			<h1>{{appTitle}}</h1>
 			<div class="animate-switch-container" ng-switch="lang">
-				<div ng-switch-when="en"><strong>En</strong>|<a href="javascript:;" ng-click="changeLang('fr')">Fr</a></div>
-				<div ng-switch-default><a href="javascript:;" ng-click="changeLang('en')">En</a>|<strong>Fr</strong></div>
+				<h3 ng-switch-when="en"><strong>En</strong>|<a href="javascript:;" ng-click="changeLang('fr')">Fr</a></h3>
+				<h3 ng-switch-default><a href="javascript:;" ng-click="changeLang('en')">En</a>|<strong>Fr</strong></h3>
 			</div>
 		</header>
 
