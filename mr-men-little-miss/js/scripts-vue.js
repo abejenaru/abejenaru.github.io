@@ -17,12 +17,10 @@ var myApp = new Vue({
 		var vm = this;
 
 		// Load default configuration
-		axios.get('config.json').then(function successCallback(response){
-			vm.config = response.data;
-
-			vm.owned = (store.get(vm.ownedStorageVar) !== undefined) ? JSON.parse(store.get(vm.ownedStorageVar)) : vm.config.owned;
-
-			vm.lang = (store.get(vm.langStorageVar) !== undefined) ? store.get(vm.langStorageVar) : vm.config.lang;
+		axios.get('config.json').then(function success(response){
+			vm.config 	= response.data;
+			vm.owned 	= (store.get(vm.ownedStorageVar) !== undefined) ? JSON.parse(store.get(vm.ownedStorageVar)) : vm.config.owned;
+			vm.lang 	= (store.get(vm.langStorageVar) !== undefined) ? store.get(vm.langStorageVar) : vm.config.lang;
 		});
 	},
 
@@ -76,9 +74,7 @@ var myApp = new Vue({
 			var _collections = this.collections;
 			for (var idx in _collections[item.collection].books) {
 				if (_collections[item.collection].books[idx].id === id) {
-					_collections[item.collection].books[idx] = Object.assign({}, _collections[item.collection].books[idx], {
-						owned: !(item.owned)
-					});
+					_collections[item.collection].books[idx].owned = !item.owned;
 					break;
 				}
 			}
