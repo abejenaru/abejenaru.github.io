@@ -72,8 +72,8 @@ var myApp = new Vue({
 				this.owned.push(id);
 			}
 
+			// hacks for Object refresh
 			var _collections = this.collections;
-			this.collections = {};
 			for (var idx in _collections[item.collection].books) {
 				if (_collections[item.collection].books[idx].id === id) {
 					_collections[item.collection].books[idx] = Object.assign({}, _collections[item.collection].books[idx], {
@@ -82,9 +82,8 @@ var myApp = new Vue({
 					break;
 				}
 			}
+			this.collections = {};
 			this.collections = _collections;
-
-			// this.loadCollections(this.lang);
 		},
 
 		orderedBooks: function(books) {
