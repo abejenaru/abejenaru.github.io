@@ -1,8 +1,6 @@
-// angular.module('myApp', ['ngAnimate']);
-angular.module('myApp', []);
+var myApp = angular.module('myApp', []);
 
-
-function CollectionController($scope, $http) {
+myApp.controller('CollectionController', function($scope, $http) {
 	var ownedStorageVar = "mr-men-little-misses-owned";
 	var langStorageVar 	= "mr-men-little-misses-lang";
 
@@ -11,8 +9,8 @@ function CollectionController($scope, $http) {
 	$scope.appTitle 	= "Mr. Men & Little Misses";
 
 	$scope.config 		= {};
-	$scope.collection 	= {};
 	$scope.owned 		= [];
+	$scope.collections 	= {};
 
 
 	// Change language
@@ -28,17 +26,19 @@ function CollectionController($scope, $http) {
 
 	// Load collection
 	$scope.loadCollection = function(lang){
-		$scope.collection = {};
+		$scope.collections = {};
 
-		$http.get('collection_'+ lang +'.json').success(function(response){
-			angular.forEach(response, function(subcollection, key){
-				$scope.collection[key] = subcollection;
+		$http.get('collection_'+ lang +'.json').then(function successCallback(response){
+			var data = response.data;
 
-				angular.forEach($scope.collection[key].library, function(entry){
+			angular.forEach(data, function(collection, key){
+				$scope.collections[key] = collection;
+
+				angular.forEach($scope.collections[key].books, function(entry){
 					if ($scope.owned.indexOf(entry.id) !== -1) {
-						angular.extend(entry, { own: true });
+						angular.extend(entry, { owned: true });
 					} else {
-						angular.extend(entry, { own: false });
+						angular.extend(entry, { owned: false });
 					}
 				});
 			});
@@ -60,8 +60,8 @@ function CollectionController($scope, $http) {
 
 
 	// Load default configuration
-	$http.get('config.json').success(function(response){
-		$scope.config = response;
+	$http.get('config.json').then(function successCallback(response){
+		$scope.config = response.data;
 
 		$scope.owned 	= (store.get(ownedStorageVar) !== undefined) ? JSON.parse(store.get(ownedStorageVar)) : $scope.config.owned;
 		store.set(ownedStorageVar, JSON.stringify($scope.owned));
@@ -73,4 +73,4 @@ function CollectionController($scope, $http) {
 		$scope.changeLang($scope.lang);
 	});
 
-}
+});

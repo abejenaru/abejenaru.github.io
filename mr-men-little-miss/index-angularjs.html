@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp" ng-controller="CollectionController">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>{{appTitle}}</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <script src="js/store.modern.min.js"></script>
-  <script src="js/axios.min.js"></script>
-  <script src="js/lodash.core.min.js"></script>
-  <script src="js/vue.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/scripts-angularjs.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div class="container-fluid" id="app">
+	<div class="container-fluid">
 		<header>
-			<h1>{{title}}</h1>
-			<div class="animate-switch-container">
-				<h3 v-if="lang == 'en'"><strong>En</strong>|<a href="javascript:;" @click="lang = 'fr'">Fr</a></h3>
-				<h3 v-else><a href="javascript:;" @click="lang = 'en'">En</a>|<strong>Fr</strong></h3>
+			<h1>{{appTitle}}</h1>
+			<div class="animate-switch-container" ng-switch="lang">
+				<h3 ng-switch-when="en"><strong>En</strong>|<a href="javascript:;" ng-click="changeLang('fr')">Fr</a></h3>
+				<h3 ng-switch-default><a href="javascript:;" ng-click="changeLang('en')">En</a>|<strong>Fr</strong></h3>
 			</div>
 		</header>
 
-		<section class="app-body" v-for="collection in collections" v-if="collection.books.length > 0">
+		<section class="app-body" ng-repeat="(key, collection) in collections" ng-if="collection.books.length > 0">
 			<header><h2>{{collection.title}}</h2></header>
 			<ul class="unstyled">
-				<li v-for="book in orderedBooks(collection.books)" class="item" :class="{owned: book.owned}" @click="toggleItem(book)">
-					<div :title="book.title">
-						<img :src="book.cover" width="96" border="0" /><br/>
+				<li class="item" ng-class="{'owned': book.owned}" ng-repeat="book in collection.books | orderBy:'order'" ng-click="book.owned = !(book.owned); toggleItem(book.id)">
+					<div title="{{book.title}}">
+						<img ng-src="img/{{key}}/{{book.id}}.jpg" width="96" border="0" /><br/>
 						<span>{{book.title}}</span>
 					</div>
 				</li>
@@ -35,8 +34,6 @@
 			</ul>
 		</section>
 	</div>
-
-	<script src="js/scripts-vue.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

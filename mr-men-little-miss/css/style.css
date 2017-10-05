@@ -69,16 +69,19 @@ ul li img {
 	font-size: 14px;
 	text-align: center;
 	cursor: pointer;
-}
 
-.own-true {
-	border-radius: 10px;
-	border: 2px solid #2ecc71;
-	box-shadow: 2px 2px 20px #8a8;
-}
-
-.own-false {
 	border-radius: 10px;
 	border: 2px solid #ccc;
 	box-shadow: 5px 5px 20px #ddd;
+}
+
+.item:hover {
+	transform: scale(1.1);
+}
+
+
+.owned {
+	border-radius: 10px;
+	border: 2px solid #2ecc71;
+	box-shadow: 2px 2px 20px #8a8;
 }

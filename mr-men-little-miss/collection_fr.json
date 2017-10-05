@@ -1,7 +1,7 @@
 {
 	"miss": {
 		"title": "Madame",
-		"library": [
+		"books": [
 			{
 				"id": "miss-bossy", "order": 1, "title": "Mme. Autoritaire"
 			},
@@ -146,7 +146,7 @@
 
 	"men": {
 		"title": "Monsieur",
-		"library": [
+		"books": [
 			{
 				"id": "mr-tickle", "order": 1, "title": "M. Chatouille"
 			},
@@ -312,14 +312,14 @@
 
 	"miss-magic": {
 		"title": "Madame Paillette",
-		"library": [
+		"books": [
 		]
 	},
 
 
 	"men-magic": {
 		"title": "Monsieur Paillette",
-		"library": [
+		"books": [
 			{
 				"id": "mr-bump-knight", "title": "M. Malchance et le Chevalier"
 			}
@@ -329,14 +329,14 @@
 
 	"miss-new": {
 		"title": "Les Nouvelles Aventures Madame",
-		"library": [
+		"books": [
 		]
 	},
 
 
 	"men-new": {
 		"title": "Les Nouvelles Aventures Monsieur",
-		"library": [
+		"books": [
 			{
 				"id": "mr-nosey-big-surprise", "title": "Une surprise pour M. Curieux"
 			}

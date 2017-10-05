@@ -1,7 +1,7 @@
 {
 	"miss": {
 		"title": "Little Misses",
-		"library": [
+		"books": [
 			{
 				"id": "miss-bossy", "order": 1, "title": "Little Miss Bossy"
 			},
@@ -143,7 +143,7 @@
 
 	"men": {
 		"title": "Mr. Men",
-		"library": [
+		"books": [
 			{
 				"id": "mr-tickle", "order": 1, "title": "Mr. Tickle"
 			},
@@ -303,14 +303,14 @@
 
 	"miss-magic": {
 		"title": "Little Miss Magic",
-		"library": [
+		"books": [
 		]
 	},
 
 
 	"men-magic": {
 		"title": "Mr. Men Magic",
-		"library": [
+		"books": [
 			{
 				"id": "mr-bump-knight", "title": "Mr. Bump and the Knight"
 			}
@@ -320,14 +320,14 @@
 
 	"miss-new": {
 		"title": "Little Miss New Story",
-		"library": [
+		"books": [
 		]
 	},
 
 
 	"men-new": {
 		"title": "Mr. Men New Story",
-		"library": [
+		"books": [
 			{
 				"id": "mr-nosey-big-surprise", "title": "Mr. Nosey and the Big Surprise"
 			}
