@@ -1,6 +1,7 @@
 var myApp = new Vue({
 	el: '#app',
 
+
 	data: {
 		lang: "",
 		title: "",
@@ -86,6 +87,7 @@ var myApp = new Vue({
 			return _.sortBy(books, 'order');
 		}
 	},
+
 
 	watch: {
 		lang: function(newLang){

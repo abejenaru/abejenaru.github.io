@@ -52,7 +52,7 @@ strong {
 ul {
 	list-style: none;
 	padding-left: 0;
-	padding: 10px;
+	/*padding: 10px;*/
 }
 
 ul li img {
@@ -62,26 +62,32 @@ ul li img {
 
 .item  {
 	float: left;
-	margin: 4px;
-	padding: 3px;
+	margin: 7px;
+	padding: 5px;
 	width: 125px;
 	height: 145px;
 	font-size: 14px;
 	text-align: center;
 	cursor: pointer;
 
+	color: #555;
+	background-color: #fafafa;
+
 	border-radius: 10px;
-	border: 2px solid #ccc;
-	box-shadow: 5px 5px 20px #ddd;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 20px #eee;
 }
 
 .item:hover {
-	transform: scale(1.1);
+	border-width: 2px;
+	transform: scale(1.2);
 }
 
 
 .owned {
+	color: #373;
+
 	border-radius: 10px;
-	border: 2px solid #2ecc71;
-	box-shadow: 2px 2px 20px #8a8;
+	border: 3px solid #2ecc71;
+	box-shadow: 3px 3px 20px #8a8;
 }
