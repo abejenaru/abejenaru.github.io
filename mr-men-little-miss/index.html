@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title></title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<script src="js/store.modern.min.js"></script>
@@ -10,12 +11,12 @@
 	<script src="js/lodash.core.min.js"></script>
 	<script src="js/polyfill.min.js"></script>
 	<script src="js/vue.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/frow.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div class="container-fluid" id="app">
+	<div id="app">
 		<header>
 			<h1>{{title}}</h1>
 			<div class="animate-switch-container">
@@ -26,10 +27,10 @@
 
 		<section class="app-body" v-for="collection in collections" v-if="collection.books.length > 0">
 			<header><h2>{{collection.title}}</h2></header>
-			<ul class="unstyled">
-				<li v-for="book in orderedBooks(collection.books)" class="item" :class="{owned: book.owned}" @click="toggleItem(book)">
+			<ul class="app-section frow justify-start">
+				<li v-for="book in orderedBooks(collection.books)" :class="{owned: book.owned}" @click="toggleItem(book)">
 					<div :title="book.title">
-						<img :src="book.cover" width="96" border="0" /><br/>
+						<img :src="book.cover" border="0" /><br/>
 						<span>{{book.title}}</span>
 					</div>
 				</li>

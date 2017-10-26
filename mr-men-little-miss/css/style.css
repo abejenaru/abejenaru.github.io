@@ -4,25 +4,32 @@
 body {
 	font-family: Pacifico, cursive;
 	background-color: #fafafa;
+	margin: 1em;
+	padding: 0;
 }
 
-.container-fluid {
-	width: 60%;
+#app {
+	width: 65%;
 	margin: auto;
-	padding-bottom: 100px;
+	margin-bottom: 5rem;
 }
 
 
-h1, h2 {
-	color: #2980b9;
+h1, h2, h3 {
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 h1 {
+	color: #2980b9;
 	font-size: 54px;
 	text-shadow: 2px 2px 5px #aaa;
 }
 
 h2 {
+	color: #2980b9;
 	font-size: 32px;
 	text-shadow: 1px 1px 1px #ccc;
 }
@@ -32,8 +39,12 @@ h3 {
 }
 
 
+
 .app-body {
 	margin-top: 6em;
+}
+
+.app-section {
 }
 
 
@@ -52,39 +63,41 @@ strong {
 ul {
 	list-style: none;
 	padding-left: 0;
-	/*padding: 10px;*/
-}
-
-ul li img {
-	padding: 4px;
 }
 
 
-.item  {
-	float: left;
+li  {
 	margin: 7px;
 	padding: 5px;
-	width: 125px;
-	height: 145px;
+	width: 135px;
+	height: 165px;
 	font-size: 14px;
 	text-align: center;
 	cursor: pointer;
 
 	color: #555;
-	background-color: #fafafa;
+	background-color: #fff;
 
 	border-radius: 10px;
-	border: 1px solid #ddd;
+	border: 1px solid #ccc;
 	box-shadow: 1px 1px 20px #eee;
 }
 
-.item:hover {
-	border-width: 2px;
+li img {
+	width: 110px;
+	padding: 4px;
+	margin-bottom: 7px;
+	background-color: #fff;
+}
+
+
+li:hover {
+	border: 3px solid #ddd;
 	transform: scale(1.2);
 }
 
 
-.owned {
+li.owned {
 	color: #373;
 
 	border-radius: 10px;

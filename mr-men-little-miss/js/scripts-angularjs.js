@@ -5,8 +5,8 @@ myApp.controller('CollectionController', function($scope, $http) {
 	var langStorageVar 	= "mr-men-little-misses-lang";
 
 	// Defaults
-	$scope.lang 		= "en";
-	$scope.appTitle 	= "Mr. Men & Little Misses";
+	$scope.lang 	= "en";
+	$scope.title 	= "Mr. Men & Little Misses";
 
 	$scope.config 		= {};
 	$scope.owned 		= [];
@@ -16,7 +16,7 @@ myApp.controller('CollectionController', function($scope, $http) {
 	// Change language
 	$scope.changeLang = function(newLang){
 		$scope.lang 	= newLang;
-		$scope.appTitle = $scope.config.title[newLang];
+		$scope.title 	= $scope.config.title[newLang];
 
 		store.set(langStorageVar, newLang);
 
@@ -35,11 +35,16 @@ myApp.controller('CollectionController', function($scope, $http) {
 				$scope.collections[key] = collection;
 
 				angular.forEach($scope.collections[key].books, function(entry){
+					var owned = false;
 					if ($scope.owned.indexOf(entry.id) !== -1) {
-						angular.extend(entry, { owned: true });
-					} else {
-						angular.extend(entry, { owned: false });
+						owned = true;
 					}
+
+					angular.extend(entry, {
+						collection: key,
+						cover: "img/" + key + "/" + entry.id + ".jpg",
+						owned: owned
+					});
 				});
 			});
 		});

@@ -48,8 +48,8 @@ var myApp = new Vue({
 					for (var idx in vm.collections[key].books) {
 						var entry = vm.collections[key].books[idx];
 
-						vm.collections[key].books[idx].collection = key;
-						vm.collections[key].books[idx].cover = "img/" + key + "/" + entry.id + ".jpg";
+						vm.collections[key].books[idx].collection 	= key;
+						vm.collections[key].books[idx].cover 		= "img/" + key + "/" + entry.id + ".jpg";
 
 						if (vm.owned.indexOf(entry.id) !== -1) {
 							vm.collections[key].books[idx].owned = true;
