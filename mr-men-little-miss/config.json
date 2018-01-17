@@ -5,9 +5,10 @@
 		"fr": "Ma collection Monsieur Madame"
 	},
 	"owned": [
-		"miss-splendid", "miss-brainy", "miss-curious", "miss-scary", 
-		"mr-funny", "mr-strong", "mr-nosey", "mr-no", "mr-impossible", "mr-topsy-turvy", "mr-muddle", "mr-messy", 
-		"mr-rush", "mr-jelly", "mr-cheerful", "mr-small", "mr-brave", "mr-rude", "mr-cool", "mr-marvelous", "mr-adventure", 
+		"miss-loud", "miss-splendid", "miss-brainy", "miss-curious", "miss-scary", 
+		"mr-greedy", "mr-funny", "mr-strong", "mr-grumble", "mr-nosey", "mr-no", "mr-happy", "mr-impossible", "mr-topsy-turvy", 
+		"mr-muddle", "mr-messy", "mr-rush", "mr-jelly", "mr-wrong", "mr-slow", "mr-cheerful", "mr-small", "mr-brave", "mr-rude", 
+		"mr-cool", "mr-marvelous", "mr-adventure", 
 		"mr-bump-knight", "mr-nosey-big-surprise"
 	]
 }
