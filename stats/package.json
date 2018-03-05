@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "vega-tooltip": "^0.4.4"
+  }
+}
