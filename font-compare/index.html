@@ -22,6 +22,7 @@
 	<link href="fonts/Tenderness.css" rel="stylesheet">
 
 	<script src="jquery-3.5.1.slim.min.js"></script>
+	<script src="bootstrap.bundle.min.js"></script>
 	<script src="holder-ipsum.js"></script>
 	<script>
 		var FONTS = ['Jost', 'Lato', 'Lora', 'Manrope', 'Merriweather', 'Merriweather Sans', 'Open Sans', 'Playfair Display', 'PT Sans', 'PT Serif', 'Raleway', 'Roboto', 'Roboto Slab', 'Route159', 'Tenderness' ];
@@ -33,19 +34,17 @@
 
 		<div class="row mb-3">
 			<div class="offset-1 col-5">
-				<select id="font-1"></select>
+				<select class="form-control form-control-sm w-25" id="font-1"></select>
 			</div>
 			<div class="col-5">
-				<select id="font-2"></select>
+				<select class="form-control form-control-sm w-25" id="font-2"></select>
 			</div>
 		</div>
 
-		<div class="row row-text">
-			<div class="col-1 text-right">
-				<small>H1</small>
-
-				<div class="text-control">
-					<select class="font-weight" style="font-size:10px">
+		<div class="row row-text mb-2">
+			<div class="col-1 text-right mt-3">
+				<div class="form-inline text-control">
+					<select class="form-control form-control-sm w-50 font-weight" style="font-size:10px">
 						<option value=""></option>
 						<option value="100" title="100 - Thin (Hairline)">Thin</option>
 						<option value="200" title="200 - Extra Light (Ultra Light)">200</option>
@@ -57,10 +56,9 @@
 						<option value="800" title="800 - Extra Bold">800</option>
 						<option value="900" title="900 - Black (Heavy)">Heavy</option>
 					</select>
-					<select class="font-size" style="font-size:10px">
+					<select class="form-control form-control-sm w-50 font-size" style="font-size:10px">
 						<option value=""></option>
 						<option value="80%">80%</option>
-						<option value="85%">85%</option>
 						<option value="90%">90%</option>
 						<option value="100%">100%</option>
 						<option value="110%">110%</option>
@@ -75,97 +73,86 @@
 						<option value="260%">260%</option>
 						<option value="280%">280%</option>
 						<option value="300%">300%</option>
+						<option value="350%">350%</option>
 					</select>
 				</div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="H1">
 				<h1></h1>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="H1">
 				<h1></h1>
 			</div>
 		</div>
 
-		<div class="row row-text">
-			<div class="col-1 text-right">
-				<small>H2</small>
-
-				<div class="text-control"></div>
+		<div class="row row-text mb-2">
+			<div class="col-1 text-right mt-2">
+				<div class="form-inline text-control"></div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="H2">
 				<h2></h2>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="H2">
 				<h2></h2>
 			</div>
 		</div>
 
-		<div class="row row-text">
-			<div class="col-1 text-right">
-				<small>H3</small>
-
-				<div class="text-control"></div>
+		<div class="row row-text mb-2">
+			<div class="col-1 text-right mt-1">
+				<div class="form-inline text-control"></div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="H3">
 				<h3></h3>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="H3">
 				<h3></h3>
 			</div>
 		</div>
 
-		<div class="row row-text">
-			<div class="col-1 text-right">
-				<small>H4</small>
-
-				<div class="text-control"></div>
+		<div class="row row-text mb-2">
+			<div class="col-1 text-right mt-1">
+				<div class="form-inline text-control"></div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="H4">
 				<h4></h4>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="H4">
 				<h4></h4>
 			</div>
 		</div>
 
-		<div class="row row-text">
+		<div class="row row-text mb-2">
 			<div class="col-1 text-right">
-				<small>H5</small>
-
-				<div class="text-control"></div>
+				<div class="form-inline text-control"></div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="H5">
 				<h5></h5>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="H5">
 				<h5></h5>
 			</div>
 		</div>
 
-		<div class="row row-text">
+		<div class="row row-text mb-2">
 			<div class="col-1 text-right">
-				<small>H6</small>
-
-				<div class="text-control"></div>
+				<div class="form-inline text-control"></div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="H6">
 				<h6></h6>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="H6">
 				<h6></h6>
 			</div>
 		</div>
 
 		<div class="row row-text">
-			<div class="col-1 text-right">
-				<small>P</small>
-
-				<div class="text-control"></div>
+			<div class="col-1 text-right mt-2">
+				<div class="form-inline text-control"></div>
 			</div>
-			<div class="col-5 font-1">
+			<div class="col-5 font-1" data-toggle="tooltip" data-placement="left" title="Paragraph">
 				<p></p>
 			</div>
-			<div class="col-5 font-2">
+			<div class="col-5 font-2" data-toggle="tooltip" data-placement="left" title="Paragraph">
 				<p></p>
 			</div>
 		</div>
@@ -191,7 +178,7 @@
 		});
 
 		var h1_content = HolderIpsum.words(3, true);
-		var h2_content = HolderIpsum.words(5, true);
+		var h2_content = HolderIpsum.words(4, true);
 		var h3_content = HolderIpsum.words(6, true);
 		var h4_content = HolderIpsum.words(6, true);
 		var h5_content = HolderIpsum.words(8, true);
@@ -239,12 +226,14 @@
 		});
 
 
-		$(document).ready(function(){
+		$(function(){
 			$('#font-1 option').eq(Math.floor(Math.random()*FONTS.length)).prop('selected', true);
 			$('#font-2 option').eq(Math.floor(Math.random()*FONTS.length)).prop('selected', true);
 
 			$('#font-1').change();
 			$('#font-2').change();
+
+			$('[data-toggle="tooltip"]').tooltip()
 		});
 	</script>
 </body>
