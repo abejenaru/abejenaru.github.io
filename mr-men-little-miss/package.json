@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "angular": "^1.6.5",
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "bootstrap": "^3.3.7",
     "store": "^2.0.12",
     "vue": "^2.4.4"
