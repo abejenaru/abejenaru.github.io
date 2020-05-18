@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Tenderness';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenderness'), local('Tenderness-Regular'),
+       url('Tenderness-Regular.woff') format('woff');
+}

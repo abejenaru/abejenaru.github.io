@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Route159';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Route159 Ultra Light'), local('Route159-UltraLight'),
+       url('Route159-UltraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Route159 Ultra Light Italic'), local('Route159-UltraLightItalic'),
+       url('Route159-UltraLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Route159 Light'), local('Route159-Light'),
+       url('Route159-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Route159 Light Italic'), local('Route159-LightItalic'),
+       url('Route159-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Route159 Regular'), local('Route159-Regular'),
+       url('Route159-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Route159 Italic'), local('Route159-Italic'),
+       url('Route159-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Route159 Semi Bold'), local('Route159-SemiBold'),
+       url('Route159-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Route159 Semi Bold Italic'), local('Route159-SemiBoldItalic'),
+       url('Route159-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Route159 Bold'), local('Route159-Bold'),
+       url('Route159-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Route159 Bold Italic'), local('Route159-BoldItalic'),
+       url('Route159-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Route159 Heavy'), local('Route159-Heavy'),
+       url('Route159-Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Route159';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Route159 Heavy Italic'), local('Route159-HeavyItalic'),
+       url('Route159-HeavyItalic.woff') format('woff');
+}

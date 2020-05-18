@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Font comparer</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="fonts/Jost.css" rel="stylesheet">
+	<link href="fonts/Lato.css" rel="stylesheet">
+	<link href="fonts/Lora.css" rel="stylesheet">
+	<link href="fonts/Manrope.css" rel="stylesheet">
+	<link href="fonts/Merriweather.css" rel="stylesheet">
+	<link href="fonts/Merriweather-Sans.css" rel="stylesheet">
+	<link href="fonts/Open-Sans.css" rel="stylesheet">
+	<link href="fonts/Playfair-Display.css" rel="stylesheet">
+	<link href="fonts/PT-Sans.css" rel="stylesheet">
+	<link href="fonts/PT-Serif.css" rel="stylesheet">
+	<link href="fonts/Raleway.css" rel="stylesheet">
+	<link href="fonts/Roboto.css" rel="stylesheet">
+	<link href="fonts/Roboto-Slab.css" rel="stylesheet">
+	<link href="fonts/Route159.css" rel="stylesheet">
+	<link href="fonts/Tenderness.css" rel="stylesheet">
+
+	<script src="jquery-3.5.1.slim.min.js"></script>
+	<script src="holder-ipsum.js"></script>
+	<script>
+		var FONTS = ['Jost', 'Lato', 'Lora', 'Manrope', 'Merriweather', 'Merriweather Sans', 'Open Sans', 'Playfair Display', 'PT Sans', 'PT Serif', 'Raleway', 'Roboto', 'Roboto Slab', 'Route159', 'Tenderness' ];
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid p-3">
+
+		<div class="row mb-3">
+			<div class="offset-1 col-5">
+				<select id="font-1"></select>
+			</div>
+			<div class="col-5">
+				<select id="font-2"></select>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>H1</small>
+
+				<div class="text-control">
+					<select class="font-weight" style="font-size:10px">
+						<option value=""></option>
+						<option value="100" title="100 - Thin (Hairline)">Thin</option>
+						<option value="200" title="200 - Extra Light (Ultra Light)">200</option>
+						<option value="300" title="300 - Light">Light</option>
+						<option value="400" title="400 - Normal (Regular)">Regular</option>
+						<option value="500" title="500 - Medium">Medium</option>
+						<option value="600" title="600 - Semi Bold">600</option>
+						<option value="700" title="700 - Bold">Bold</option>
+						<option value="800" title="800 - Extra Bold">800</option>
+						<option value="900" title="900 - Black (Heavy)">Heavy</option>
+					</select>
+					<select class="font-size" style="font-size:10px">
+						<option value=""></option>
+						<option value="80%">80%</option>
+						<option value="85%">85%</option>
+						<option value="90%">90%</option>
+						<option value="100%">100%</option>
+						<option value="110%">110%</option>
+						<option value="120%">120%</option>
+						<option value="140%">140%</option>
+						<option value="150%">150%</option>
+						<option value="160%">160%</option>
+						<option value="180%">180%</option>
+						<option value="200%">200%</option>
+						<option value="240%">240%</option>
+						<option value="250%">250%</option>
+						<option value="260%">260%</option>
+						<option value="280%">280%</option>
+						<option value="300%">300%</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-5 font-1">
+				<h1></h1>
+			</div>
+			<div class="col-5 font-2">
+				<h1></h1>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>H2</small>
+
+				<div class="text-control"></div>
+			</div>
+			<div class="col-5 font-1">
+				<h2></h2>
+			</div>
+			<div class="col-5 font-2">
+				<h2></h2>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>H3</small>
+
+				<div class="text-control"></div>
+			</div>
+			<div class="col-5 font-1">
+				<h3></h3>
+			</div>
+			<div class="col-5 font-2">
+				<h3></h3>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>H4</small>
+
+				<div class="text-control"></div>
+			</div>
+			<div class="col-5 font-1">
+				<h4></h4>
+			</div>
+			<div class="col-5 font-2">
+				<h4></h4>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>H5</small>
+
+				<div class="text-control"></div>
+			</div>
+			<div class="col-5 font-1">
+				<h5></h5>
+			</div>
+			<div class="col-5 font-2">
+				<h5></h5>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>H6</small>
+
+				<div class="text-control"></div>
+			</div>
+			<div class="col-5 font-1">
+				<h6></h6>
+			</div>
+			<div class="col-5 font-2">
+				<h6></h6>
+			</div>
+		</div>
+
+		<div class="row row-text">
+			<div class="col-1 text-right">
+				<small>P</small>
+
+				<div class="text-control"></div>
+			</div>
+			<div class="col-5 font-1">
+				<p></p>
+			</div>
+			<div class="col-5 font-2">
+				<p></p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script>
+		for (var i = 0; i < FONTS.length; i++) {
+			var option = '<option value="'+ FONTS[i] +'">'+ FONTS[i] +'</option>';
+			$('#font-1').append(option);
+			$('#font-2').append(option);
+		}
+
+
+		$textControl1 = $('.text-control:first .font-weight');
+		$textControl2 = $('.text-control:first .font-size');
+		$('.row-text .text-control').not(':first').each(function(){
+			$(this).append($textControl1.clone());
+			$(this).append(' ');
+			$(this).append($textControl2.clone());
+		});
+
+		var h1_content = HolderIpsum.words(3, true);
+		var h2_content = HolderIpsum.words(5, true);
+		var h3_content = HolderIpsum.words(6, true);
+		var h4_content = HolderIpsum.words(6, true);
+		var h5_content = HolderIpsum.words(8, true);
+		var h6_content = HolderIpsum.words(10, true);
+		var p_content = HolderIpsum.paragraphs(2).join('</p><p>');
+		$('.row-text h1').text(h1_content[0].toUpperCase() + h1_content.slice(1));
+		$('.row-text h2').text(h2_content[0].toUpperCase() + h2_content.slice(1));
+		$('.row-text h3').text(h3_content[0].toUpperCase() + h3_content.slice(1));
+		$('.row-text h4').text(h4_content[0].toUpperCase() + h4_content.slice(1));
+		$('.row-text h5').text(h5_content[0].toUpperCase() + h5_content.slice(1));
+		$('.row-text h6').text(h6_content[0].toUpperCase() + h6_content.slice(1));
+		$('.row-text p').html(p_content);
+
+
+		$('#font-1').on('change', function(){
+			var font = $(this).val();
+			$('.row-text .font-1').each(function(){
+				$(this).css('font-family', font);
+			});
+		});
+		$('#font-2').on('change', function(){
+			var font = $(this).val();
+			$('.row-text .font-2').each(function(){
+				$(this).css('font-family', font);
+			});
+		});
+
+		$('.font-weight').on('change', function(){
+			$this = $(this);
+			var weight = $this.val();
+			$this.parents('.row-text').children(':not(:first)').each(function(){
+				$(this).children().each(function(){
+					$(this).css('font-weight', weight);
+				});
+			});
+		});
+		$('.font-size').on('change', function(){
+			$this = $(this);
+			var size = $this.val();
+			$this.parents('.row-text').children(':not(:first)').each(function(){
+				$(this).children().each(function(){
+					$(this).css('font-size', size);
+				});
+			});
+		});
+
+
+		$(document).ready(function(){
+			$('#font-1 option').eq(Math.floor(Math.random()*FONTS.length)).prop('selected', true);
+			$('#font-2 option').eq(Math.floor(Math.random()*FONTS.length)).prop('selected', true);
+
+			$('#font-1').change();
+			$('#font-2').change();
+		});
+	</script>
+</body>
+</html>
