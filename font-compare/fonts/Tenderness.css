@@ -2,6 +2,7 @@
   font-family: 'Tenderness';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Tenderness'), local('Tenderness-Regular'),
        url('Tenderness-Regular.woff') format('woff');
 }

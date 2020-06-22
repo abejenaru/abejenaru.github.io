@@ -3,53 +3,8 @@
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-600 - latin-ext_latin_cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 600;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-500 - latin-ext_latin_cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-700 - latin-ext_latin_cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-800 - latin-ext_latin_cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 800;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-900 - latin-ext_latin_cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* playfair-display-italic - latin-ext_latin_cyrillic */
@@ -57,17 +12,17 @@
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 400;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* playfair-display-600italic - latin-ext_latin_cyrillic */
+/* playfair-display-500 - latin-ext_latin_cyrillic */
 @font-face {
   font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 600;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* playfair-display-500italic - latin-ext_latin_cyrillic */
@@ -75,8 +30,35 @@
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 500;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* playfair-display-600 - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* playfair-display-600italic - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* playfair-display-700 - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* playfair-display-700italic - latin-ext_latin_cyrillic */
@@ -84,8 +66,17 @@
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 700;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* playfair-display-800 - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* playfair-display-800italic - latin-ext_latin_cyrillic */
@@ -93,8 +84,17 @@
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 800;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-800italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-800italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* playfair-display-900 - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* playfair-display-900italic - latin-ext_latin_cyrillic */
@@ -102,6 +102,6 @@
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 900;
-  src: local(''),
-       url('playfair-display-v20-latin-ext_latin_cyrillic-900italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+  src: url('playfair-display-v20-latin-ext_latin_cyrillic-900italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
