@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oracle TNS</title>
+</head>
+<body>
+    <h3>Oracle TNS Connection String generator</h3>
+
+    <form>
+        <table cellspacing="10" cellpadding="3">
+            <tr>
+                <th style="text-align:right">
+                    <label>Host/server</label>
+                </th>
+                <td>
+                    <input type="text" name="host" id="host" size="20" value="localhost" onkeyup="getTNS();">
+                </td>
+            </tr>
+
+            <tr>
+                <th style="text-align:right">
+                    <label>Port</label>
+                </th>
+                <td>
+                    <input type="text" name="port" id="port" size="10" value="1521" onkeyup="getTNS()">
+                </td>
+            </tr>
+
+            <tr>
+                <th style="text-align:right">
+                    <label>Service name</label>
+                </th>
+                <td>
+                    <input type="text" name="service" id="service" size="20" value="example" onkeyup="getTNS()">
+                </td>
+            </tr>
+
+            <tr>
+                <th style="text-align:right">
+                    <label>TNS connection string</label>
+                </th>
+                <td>
+                    <textarea name="tns" id="tns" rows="7" cols="60" onfocus="this.select();" onmouseup="return false;"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function getTNS() {
+            var tns = '(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=%HOST%)(PORT=%PORT%)))(CONNECT_DATA=%CONNECT_DATA%))';
+            var service = '(SERVICE_NAME=%SERVICE_NAME%)';
+    
+            var hostEl = document.getElementById('host');
+            var portEl = document.getElementById('port');
+            var serviceEl = document.getElementById('service');
+            var tnsEl = document.getElementById('tns');
+
+            var connectData = service.replace('%SERVICE_NAME%', serviceEl.value);
+    
+            var tnsContent = tns;
+            tnsContent = tnsContent.replace('%HOST%', hostEl.value);
+            tnsContent = tnsContent.replace('%PORT%', portEl.value);
+            tnsContent = tnsContent.replace('%CONNECT_DATA%', connectData);
+            tnsEl.textContent = tnsContent;
+        }
+
+        getTNS();
+    </script>
+</body>
+</html>
